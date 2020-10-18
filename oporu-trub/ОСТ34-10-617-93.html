@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Металайн</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../sass/style.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tab2.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400&subset=cyrillic,cyrillic-ext,latin">
+</head>
+<body>
+  <header>
+    <container>
+    <div class="header">
+        <div class="logo header__logo"><img src="../img/logo.png"no-repeat left alt="123">
+      </div>
+      <div class="header__info">
+          <h1 class="header__info_title">Цены / Опоры   трубопроводов</h1>
+          <p class=number>Опора неподвижная для вертикальных коробов ОСТ 34-10-610-93</p>
+        <div class="header__info_main">
+          <div class="products">
+               <div class="products-01"><img src="../img/01.png"alt="1"> </div>
+             <div class="protuct_col">
+                 <div class="products-02"> <img src="../img/02.png"alt="2"><br> </div>
+                 <div class="products-03"> <img src="../img/03.png"alt="3"></div>
+              </div>
+
+          </div>
+      </div>
+    </div>
+  <!-- ./info -->
+
+
+  </div>
+
+      <div class="box header__form">
+        <div class="application">Оставить заявку</div>
+          <form id="ajax-contact-form" enctype="multipart/form-data" method="post">
+
+              <input  type="text"  value="" placeholder="Имя" class="header__form-input" id="nameFF" name="nameFF" type="text" required>
+
+                <input class="header__form-input" type="text"  placeholder="ИНН/Компания" id="compFF" name="compFF" type="text" required>
+
+                <input type="email"  value=""class="header__form-input" placeholder="Электронная почта" id="contactFF" name="contactFF" type="email" required>
+
+                <input type="tel"  value="" placeholder="Телефон" class="header__form-input" placeholder="Телефон" id="telFF" name="telFF" type="tel" required>
+
+                <textarea class="header__form-textarea"  placeholder="Ваше сообщение" id="projectFF" name="projectFF" cols="40" rows="3"></textarea>
+
+              <div class="control-file">
+                <label for="fileFF">Прикрепить файл:</label>
+                <input id="fileFF" name="fileFF" type="file">
+              </div>
+              <input type="submit" id="submitFF" name="submit" value="Отправить" class="form-container__btn header__form-container__btn btn1 btn1__color1">
+              <input  id="submitFF" class="form-container__btn header__form-container__btn  btn1 btn1__color2" type="submit" name="submit"  value="Заказать обратный звонок">
+            </form>
+        </div>
+
+        <!-- ./form -->
+
+
+      </container>
+
+    </header>
+
+        <!-- ./header -->
+        <main>
+
+          <div id="tabs">
+                 <div class="tab whiteborder">Цена</div>
+                 <div class="tab">Техническая документация</div>
+
+                 <div class="tabContent"><div id="tab1">Прайс-лист на опоры неподвижные для вертикальных коробов ОСТ 34-10-610-9
+                   <!-- <table cellspacing="1">
+                    <tr><th id="th1">№</th><th>Наименование</th><th>Тип опоры</th><th> Дн или Ау</th><th>Допускаемая вертикальная нагрузка, Кн</th><th>Количество на короб, шт.</th><th>Масса опоры, кг</th><th id="th8">Стоимость за ед., руб.</th></tr>
+                    <tr><td id="td1">1</td><td>Ячейка 2</td><td>Ячейка 3</td><td>Ячейка 4</td><td>Ячейка 5</td><td>Ячейка 6</td><td>Ячейка 7</td><td id="td8">Ячейка 8</td></tr>
+                    <tr><td id="td1">2</td><td>Ячейка 2</td><td>Ячейка 3</td><td>Ячейка 4</td><td>Ячейка 5</td><td>Ячейка 6</td><td>Ячейка 7</td><td id="td8">Ячейка 8</td></tr>
+                   </table> -->
+                   <table class="pricelist">
+        <tbody>
+          <tr>
+            <th width="30">№</th>
+            <th width="200">Наименование</th>
+            <th>Вертикальная нагрузка, кН</th>
+            <th>Диаметр Дн, мм</th>
+            <th>Ширина опоры, мм</th>
+            <th>Масса опоры, кг</th>
+            <th>Стоимость за ед. руб.*</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="price_name">57У-01 ОСТ 34-10-617-93</td>
+            <td>0,7</td>
+            <td>57</td>
+            <td>100</td>
+            <td>1,1</td>
+            <td width="64" class="price_cena">210 р.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="price_name">57К-02 ОСТ 34-10-617-93</td>
+            <td>0,7</td>
+            <td>57</td>
+            <td>100</td>
+            <td>1,1</td>
+            <td class="price_cena">680 р.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="price_name">76У-03 ОСТ 34-10-617-93</td>
+            <td>1,5</td>
+            <td>76</td>
+            <td>100</td>
+            <td>1,4</td>
+            <td class="price_cena">240 р.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="price_name">76К-04 ОСТ 34-10-617-93</td>
+            <td>1,5</td>
+            <td>76</td>
+            <td>100</td>
+            <td>1,4</td>
+            <td class="price_cena">790 р.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="price_name">89У-05 ОСТ 34-10-617-93</td>
+            <td>2,0</td>
+            <td>89</td>
+            <td>100</td>
+            <td>1,6</td>
+            <td class="price_cena">260 р.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td class="price_name">89К-06 ОСТ 34-10-617-93</td>
+            <td>2,0</td>
+            <td>89</td>
+            <td>100</td>
+            <td>1,6</td>
+            <td class="price_cena">950 р.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td class="price_name">108У-07 ОСТ 34-10-617-93</td>
+            <td>3,6</td>
+            <td>108</td>
+            <td>100</td>
+            <td>2,7</td>
+            <td class="price_cena">330 р.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td class="price_name">108К-08 ОСТ 34-10-617-93</td>
+            <td>3,6</td>
+            <td>108</td>
+            <td>100</td>
+            <td>2,7</td>
+            <td class="price_cena">1 110 р.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td class="price_name">108У-09 ОСТ 34-10-617-93</td>
+            <td>3,6</td>
+            <td>108</td>
+            <td>150</td>
+            <td>3,2</td>
+            <td class="price_cena">370 р.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td class="price_name">108К-10 ОСТ 34-10-617-93</td>
+            <td>3,6</td>
+            <td>108</td>
+            <td>150</td>
+            <td>3,2</td>
+            <td class="price_cena">1 190 р.</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td class="price_name">133У-11 ОСТ 34-10-617-93</td>
+            <td>4,3</td>
+            <td>133</td>
+            <td>100</td>
+            <td>3,3</td>
+            <td class="price_cena">380 р.</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td class="price_name">133К-12 ОСТ 34-10-617-93</td>
+            <td>4,3</td>
+            <td>133</td>
+            <td>100</td>
+            <td>3,3</td>
+            <td class="price_cena">1 430 р.</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td class="price_name">133У-13 ОСТ 34-10-617-93</td>
+            <td>4,3</td>
+            <td>133</td>
+            <td>150</td>
+            <td>3,8</td>
+            <td class="price_cena">440 р.</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td class="price_name">133К-14 ОСТ 34-10-617-93</td>
+            <td>4,3</td>
+            <td>133</td>
+            <td>150</td>
+            <td>3,8</td>
+            <td class="price_cena">1 520 р.</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td class="price_name">159У-15 ОСТ 34-10-617-93</td>
+            <td>6,0</td>
+            <td>159</td>
+            <td>100</td>
+            <td>3,8</td>
+            <td class="price_cena">440 р.</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td class="price_name">159К-16 ОСТ 34-10-617-93</td>
+            <td>6,0</td>
+            <td>159</td>
+            <td>100</td>
+            <td>3,8</td>
+            <td class="price_cena">1 760 р.</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td class="price_name">159У-17 ОСТ 34-10-617-93</td>
+            <td>6,0</td>
+            <td>159</td>
+            <td>150</td>
+            <td>4,4</td>
+            <td class="price_cena">510 р.</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td class="price_name">159К-18 ОСТ 34-10-617-93</td>
+            <td>6,0</td>
+            <td>159</td>
+            <td>150</td>
+            <td>4,4</td>
+            <td class="price_cena">1 860 р.</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td class="price_name">219У-19 ОСТ 34-10-617-93</td>
+            <td>11,0</td>
+            <td>219</td>
+            <td>100</td>
+            <td>9,5</td>
+            <td class="price_cena">1 100 р.</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td class="price_name">219К-20 ОСТ 34-10-617-93</td>
+            <td>11,0</td>
+            <td>219</td>
+            <td>100</td>
+            <td>10,5</td>
+            <td class="price_cena">5 110 р.</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td class="price_name">219У-21 ОСТ 34-10-617-93</td>
+            <td>11,0</td>
+            <td>219</td>
+            <td>150</td>
+            <td>10,5</td>
+            <td class="price_cena">1 210 р.</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td class="price_name">219К-22 ОСТ 34-10-617-93</td>
+            <td>11,0</td>
+            <td>219</td>
+            <td>150</td>
+            <td>11,5</td>
+            <td class="price_cena">5 280 р.</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td class="price_name">273У-23 ОСТ 34-10-617-93</td>
+            <td>19,0</td>
+            <td>273</td>
+            <td>100</td>
+            <td>11,0</td>
+            <td class="price_cena">1 270 р.</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td class="price_name">273К-24 ОСТ 34-10-617-93</td>
+            <td>19,0</td>
+            <td>273</td>
+            <td>100</td>
+            <td>12,0</td>
+            <td class="price_cena">6 020 р.</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td class="price_name">273У-25 ОСТ 34-10-617-93</td>
+            <td>19,0</td>
+            <td>273</td>
+            <td>150</td>
+            <td>12,5</td>
+            <td class="price_cena">1 440 р.</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td class="price_name">273К-26 ОСТ 34-10-617-93</td>
+            <td>19,0</td>
+            <td>273</td>
+            <td>150</td>
+            <td>13,5</td>
+            <td class="price_cena">6 440 р.</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td class="price_name">325У-27 ОСТ 34-10-617-93</td>
+            <td>25,0</td>
+            <td>325</td>
+            <td>100</td>
+            <td>17,5</td>
+            <td class="price_cena">1 930 р.</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td class="price_name">325К-28 ОСТ 34-10-617-93</td>
+            <td>25,0</td>
+            <td>325</td>
+            <td>100</td>
+            <td>20,0</td>
+            <td class="price_cena">9 920 р.</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td class="price_name">325У-29 ОСТ 34-10-617-93</td>
+            <td>25,0</td>
+            <td>325</td>
+            <td>150</td>
+            <td>19,5</td>
+            <td class="price_cena">2 090 р.</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td class="price_name">325К-30 ОСТ 34-10-617-93</td>
+            <td>25,0</td>
+            <td>325</td>
+            <td>150</td>
+            <td>22,0</td>
+            <td class="price_cena">10 260 р.</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td class="price_name">377У-31 ОСТ 34-10-617-93</td>
+            <td>30,0</td>
+            <td>377</td>
+            <td>100</td>
+            <td>19,5</td>
+            <td class="price_cena">2 090 р.</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td class="price_name">377К-32 ОСТ 34-10-617-93</td>
+            <td>30,0</td>
+            <td>377</td>
+            <td>100</td>
+            <td>22,0</td>
+            <td class="price_cena">11 500 р.</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td class="price_name">377У-33 ОСТ 34-10-617-93</td>
+            <td>30,0</td>
+            <td>377</td>
+            <td>150</td>
+            <td>22,0</td>
+            <td class="price_cena">2 530 р.</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td class="price_name">377К-34 ОСТ 34-10-617-93</td>
+            <td>30,0</td>
+            <td>377</td>
+            <td>150</td>
+            <td>24,0</td>
+            <td class="price_cena">11 840 р.</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>35</td>
+            <td class="price_name">426У-35 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>426</td>
+            <td>100</td>
+            <td>39,5</td>
+            <td class="price_cena">4 230 р.</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td class="price_name">426К-36 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>426</td>
+            <td>100</td>
+            <td>41,0</td>
+            <td class="price_cena">20 670 р.</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td class="price_name">426У-37 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>426</td>
+            <td>150</td>
+            <td>42,0</td>
+            <td class="price_cena">4 500 р.</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td class="price_name">426К-38 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>426</td>
+            <td>150</td>
+            <td>45,0</td>
+            <td class="price_cena">21 350 р.</td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td class="price_name">478У-39 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>478</td>
+            <td>100</td>
+            <td>40,0</td>
+            <td class="price_cena">4 280 р.</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td class="price_name">478К-40 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>478</td>
+            <td>100</td>
+            <td>43,5</td>
+            <td class="price_cena">21 840 р.</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td class="price_name">478У-41 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>478</td>
+            <td>150</td>
+            <td>44,0</td>
+            <td class="price_cena">4 710 р.</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td class="price_name">478К-42 ОСТ 34-10-617-93</td>
+            <td>36,0</td>
+            <td>478</td>
+            <td>150</td>
+            <td>47,0</td>
+            <td class="price_cena">22 430 р.</td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td class="price_name">530У-43 ОСТ 34-10-617-93</td>
+            <td>45,0</td>
+            <td>530</td>
+            <td>100</td>
+            <td>43,0</td>
+            <td class="price_cena">4 600 р.</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td class="price_name">530К-44 ОСТ 34-10-617-93</td>
+            <td>45,0</td>
+            <td>530</td>
+            <td>100</td>
+            <td>46,0</td>
+            <td class="price_cena">24 250 р.</td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td class="price_name">530У-45 ОСТ 34-10-617-93</td>
+            <td>45,0</td>
+            <td>530</td>
+            <td>150</td>
+            <td>46,0</td>
+            <td class="price_cena">4 930 р.</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td class="price_name">530К-46 ОСТ 34-10-617-93</td>
+            <td>45,0</td>
+            <td>530</td>
+            <td>150</td>
+            <td>49,0</td>
+            <td class="price_cena">24 760 р.</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td class="price_name">630У-47 ОСТ 34-10-617-93</td>
+            <td>60,0</td>
+            <td>630</td>
+            <td>100</td>
+            <td>59,0</td>
+            <td class="price_cena">6 320 р.</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td class="price_name">630К-48 ОСТ 34-10-617-93</td>
+            <td>60,0</td>
+            <td>630</td>
+            <td>100</td>
+            <td>63,0</td>
+            <td class="price_cena">29 690 р.</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td class="price_name">630У-49 ОСТ 34-10-617-93</td>
+            <td>60,0</td>
+            <td>630</td>
+            <td>150</td>
+            <td>64,0</td>
+            <td class="price_cena">6 720 р.</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td class="price_name">630К-50 ОСТ 34-10-617-93</td>
+            <td>60,0</td>
+            <td>630</td>
+            <td>150</td>
+            <td>68,0</td>
+            <td class="price_cena">30 530 р.</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td class="price_name">720У-51 ОСТ 34-10-617-93</td>
+            <td>75,0</td>
+            <td>720</td>
+            <td>100</td>
+            <td>82,0</td>
+            <td class="price_cena">8 610 р.</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td class="price_name">720К-52 ОСТ 34-10-617-93</td>
+            <td>75,0</td>
+            <td>720</td>
+            <td>100</td>
+            <td>88,0</td>
+            <td class="price_cena">44 180 р.</td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td class="price_name">720У-53 ОСТ 34-10-617-93</td>
+            <td>75,0</td>
+            <td>720</td>
+            <td>150</td>
+            <td>87,0</td>
+            <td class="price_cena">9 140 р.</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td class="price_name">720К-54 ОСТ 34-10-617-93</td>
+            <td>75,0</td>
+            <td>720</td>
+            <td>150</td>
+            <td>94,0</td>
+            <td class="price_cena">45 190 р.</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td class="price_name">820У-55 ОСТ 34-10-617-93</td>
+            <td>95,0</td>
+            <td>820</td>
+            <td>100</td>
+            <td>86,0</td>
+            <td class="price_cena">9 030 р.</td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td class="price_name">820К-56 ОСТ 34-10-617-93</td>
+            <td>95,0</td>
+            <td>820</td>
+            <td>100</td>
+            <td>94,0</td>
+            <td class="price_cena">49 660 р.</td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td class="price_name">820У-57 ОСТ 34-10-617-93</td>
+            <td>95,0</td>
+            <td>820</td>
+            <td>150</td>
+            <td>92,0</td>
+            <td class="price_cena">9 660 р.</td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td class="price_name">820К-58 ОСТ 34-10-617-93</td>
+            <td>95,0</td>
+            <td>820</td>
+            <td>150</td>
+            <td>100,0</td>
+            <td class="price_cena">50 680 р.</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td class="price_name">920У-59 ОСТ 34-10-617-93</td>
+            <td>115,0</td>
+            <td>920</td>
+            <td>100</td>
+            <td>113,0</td>
+            <td class="price_cena">11 870 р.</td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td class="price_name">920К-60 ОСТ 34-10-617-93</td>
+            <td>115,0</td>
+            <td>920</td>
+            <td>100</td>
+            <td>122,0</td>
+            <td class="price_cena">66 560 р.</td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td class="price_name">920У-61 ОСТ 34-10-617-93</td>
+            <td>115,0</td>
+            <td>920</td>
+            <td>150</td>
+            <td>120,0</td>
+            <td class="price_cena">12 600 р.</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td class="price_name">920К-62 ОСТ 34-10-617-93</td>
+            <td>115,0</td>
+            <td>920</td>
+            <td>150</td>
+            <td>130,0</td>
+            <td class="price_cena">67 910 р.</td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td class="price_name">1020У-63 ОСТ 34-10-617-93</td>
+            <td>135,0</td>
+            <td>1020</td>
+            <td>100</td>
+            <td>118,0</td>
+            <td class="price_cena">12 390 р.</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td class="price_name">1020К-64 ОСТ 34-10-617-93</td>
+            <td>135,0</td>
+            <td>1020</td>
+            <td>100</td>
+            <td>128,0</td>
+            <td class="price_cena">72 460 р.</td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td class="price_name">1020У-65 ОСТ 34-10-617-93</td>
+            <td>135,0</td>
+            <td>1020</td>
+            <td>150</td>
+            <td>126,0</td>
+            <td class="price_cena">13 230 р.</td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td class="price_name">1020К-66 ОСТ 34-10-617-93</td>
+            <td>135,0</td>
+            <td>1020</td>
+            <td>150</td>
+            <td>136,0</td>
+            <td class="price_cena">73 810 р.</td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td class="price_name">1220У-67 ОСТ 34-10-617-93</td>
+            <td>185.0</td>
+            <td>1220</td>
+            <td>100</td>
+            <td>174,0</td>
+            <td class="price_cena">18 270 р.</td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td class="price_name">1220К-68 ОСТ 34-10-617-93</td>
+            <td>185,0</td>
+            <td>1220</td>
+            <td>100</td>
+            <td>190,0</td>
+            <td class="price_cena">109 520 р.</td>
+          </tr>
+          <tr>
+            <td>69</td>
+            <td class="price_name">1220У-69 ОСТ 34-10-617-93</td>
+            <td>185,0</td>
+            <td>1220</td>
+            <td>150</td>
+            <td>184,0</td>
+            <td class="price_cena">19 320 р.</td>
+          </tr>
+          <tr>
+            <td>70</td>
+            <td class="price_name">1220К-70 ОСТ 34-10-617-93</td>
+            <td>185,0</td>
+            <td>1220</td>
+            <td>150</td>
+            <td>200,0</td>
+            <td class="price_cena">111 200 р.</td>
+          </tr>
+          <tr>
+            <td>71</td>
+            <td class="price_name">1420У-71 ОСТ 34-10-617-93</td>
+            <td>260,0</td>
+            <td>1420</td>
+            <td>100</td>
+            <td>189,0</td>
+            <td class="price_cena">19 850 р.</td>
+          </tr>
+          <tr>
+            <td>72</td>
+            <td class="price_name">1420К-72 ОСТ 34-10-617-93</td>
+            <td>260,0</td>
+            <td>1420</td>
+            <td>100</td>
+            <td>209,0</td>
+            <td class="price_cena">123 740 р.</td>
+          </tr>
+          <tr>
+            <td>73</td>
+            <td class="price_name">1420У-73 ОСТ 34-10-617-93</td>
+            <td>260,0</td>
+            <td>1420</td>
+            <td>150</td>
+            <td>199,0</td>
+            <td class="price_cena">20 900 р.</td>
+          </tr>
+          <tr>
+            <td>74</td>
+            <td class="price_name">1420К-74 ОСТ 34-10-617-93</td>
+            <td>260,0</td>
+            <td>1420</td>
+            <td>150</td>
+            <td>219,0</td>
+            <td class="price_cena">125 420 р.</td>
+          </tr>
+          <tr>
+            <td>75</td>
+            <td class="price_name">1620У-75 ОСТ 34-10-617-93</td>
+            <td>330,0</td>
+            <td>1620</td>
+            <td>100</td>
+            <td>260,0</td>
+            <td class="price_cena">27 300 р.</td>
+          </tr>
+          <tr>
+            <td>76</td>
+            <td class="price_name">1620К-76 ОСТ 34-10-617-93</td>
+            <td>330,0</td>
+            <td>1620</td>
+            <td>100</td>
+            <td>285,0</td>
+            <td class="price_cena">161 750 р.</td>
+          </tr>
+          <tr>
+            <td>77</td>
+            <td class="price_name">1620У-77 ОСТ 34-10-617-93</td>
+            <td>330,0</td>
+            <td>1620</td>
+            <td>150</td>
+            <td>272,0</td>
+            <td class="price_cena">28 560 р.</td>
+          </tr>
+          <tr>
+            <td>78</td>
+            <td class="price_name">1620К-78 ОСТ 34-10-617-93</td>
+            <td>330,0</td>
+            <td>1620</td>
+            <td>150</td>
+            <td>289,0</td>
+            <td class="price_cena">163 770 р.</td>
+          </tr>
+        </tbody>
+      </table>
+                   * - Цены указаны с учетом НДС. Цена может быть изменена в зависимости от объема заказа и сроков изготовления.
+                 </div></div>
+                 <div class="tabContent texDoc">   Техническая документация
+ОСТ 34-10-620-93 распространяется на опоры скользящие и неподвижные с направляющим хомутом, предназначенные для трубопроводов ТЭС и АЭС с Дн 57-520 мм <br>с параметрами среды меньшей или равной 80 градусам Цельсия.<br>
+
+Детали и сборочные единицы изготавливаются по рабочим чертежам «Опоры подвижные и неподвижные» Л8-197.000.<br>
+
+Пример условного обозначения опоры скользящей с направляющим хомутом для трубопровода Дн=133 мм, тип 1:<br>
+
+Опора 133У-17 ОСТ 34-10-620 для трубопровода из углеродистой стали;<br>
+
+Опора 133К-18 ОСТ 34-10-620 для трубопровода из коррозионностойкой стали.<br>
+
+То же для опоры неподвижной тип 2:<br>
+
+Опора 133К-20 ОСТ 34-10-620<br>
+
+Типы и основные размеры должны соответствовать указанным на чертежах и таблицах для скользящих опор – тип 1, для подвижных тип 2 ОСТа 34-10-620-93.<div class="OCT34-10-620-93">
+  <iframe src="../pdf/OST_34-10-620-93.pdf" width="1200px" height="1200px"></iframe>
+<!-- <object><embed src="pdf/OST_34-10-620-93.pdf" width="700" height="auto" /></object> -->
+</div>
+</div>
+
+
+             </div>
+        </main>
+        <footer>
+          <div class="footer">
+          <div class="footer__logo"><img src="" alt="">  </div>
+          <div class="footer__menu">
+            <nav class="footer__menu_nav">
+              <a href="#" class="footer__menu_link">Главная</a>
+              <a href="#" class="footer__menu_link">Каталог</a>
+              <a href="#" class="footer__menu_link">Продукция</a>
+              <a href="#" class="footer__menu_link">Цены</a>
+              <a href="#" class="footer__menu_link">Контакты</a>
+              <a href="#" class="footer__menu_link">Вакансии</a>
+              <a href="#" class="footer__menu_link footer__menu_link1">Техническая документация</a>
+            </nav>
+            <div class="contacts">
+              Телефон отдела продаж:
+              <ul>
+                                <li>8 (800) 600 66 50</li>
+                                <li>8 (800) 600 66 50</li>
+                            </ul>
+                        </div>
+                    </div>
+          </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+            <script src="../contactform.js"></script>
+
+</script>
+</body>
+</html>

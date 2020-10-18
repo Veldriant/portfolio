@@ -1,73 +1,46 @@
 <?php
+if (isset ($_POST['contactFF'])) {
+  $to = "veldriant3021@gmail.com";
+  $from = "support@tpverstak.ru";
+  $subject = "Заполнена контактная форма на сайте ".$_SERVER['HTTP_REFERER'];
+  $message = "Имя пользователя: ".$_POST['nameFF']."\nНазвание компании: ".$_POST['compFF']."\nEmail пользователя ".$_POST['contactFF']."\nТелефон пользователя ".$_POST['telFF']."\nСообщение: ".$_POST['projectFF']."\n\nАдрес сайта: ".$_SERVER['HTTP_REFERER'];
 
-$post = (!empty($_POST)) ? true : false;
+  $boundary = md5(date('r', time()));
+  $filesize = '';
+  $headers = "MIME-Version: 1.0\r\n";
+  $headers .= "From: " . $from . "\r\n";
+  $headers .= "Reply-To: " . $from . "\r\n";
+  $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
+  $message="
+Content-Type: multipart/mixed; boundary=\"$boundary\"
 
-if($post)
-{
-$email = trim($_POST['email']);
-$name = htmlspecialchars($_POST['name']);
-$email = htmlspecialchars($_POST['email']);
-$message = htmlspecialchars($_POST['message']);
-$error = '';
+--$boundary
+Content-Type: text/plain; charset=\"utf-8\"
+Content-Transfer-Encoding: 7bit
 
-if(!$name)
-{
-$error .= 'Пожалуйста введите ваше имя<br />';
-}
+$message";
+     if(is_uploaded_file($_FILES['fileFF']['tmp_name'])) {
+         $attachment = chunk_split(base64_encode(file_get_contents($_FILES['fileFF']['tmp_name'])));
+         $filename = $_FILES['fileFF']['name'];
+         $filetype = $_FILES['fileFF']['type'];
+         $filesize = $_FILES['fileFF']['size'];
+         $message.="
 
-// Проверка телефона
-function ValidateTel($valueTel)
-{
-$regexTel = "/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/";
-if($valueTel == "") {
-return false;
-} else {
-$string = preg_replace($regexTel, "", $valueTel);
-}
-return empty($string) ? true : false;
-}
-if(!$email)
-{
-$error .= "Пожалуйста введите email<br />";
-}
-if($email && !ValidateTel($email))
-{
-$error .= "Введите корректный email<br />";
-}
-if(!$error)
+--$boundary
+Content-Type: \"$filetype\"; name=\"$filename\"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=\"$filename\"
 
-// (length)
-if(!$message || strlen($message) < 1)
-{
-$error .= "Введите ваше сообщение<br />";
-}
-if(!$error)
-{
+$attachment";
+     }
+   $message.="
+--$boundary--";
 
-
-$name_tema = "=?utf-8?b?". base64_encode($name) ."?=";
-
-$subject ="Новая заявка с сайта domain.name";
-$subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
-
-$message1 ="\n\nИмя: ".$name."\n\nE-mail: " .$email."\n\nСообщение: ".$message."\n\n";
-
-
-$header = "Content-Type: text/plain; charset=utf-8\n";
-
-$header .= "From: Новая заявка <veldriant3021@gmail.com>\n\n";
-$mail = mail("veldriant3021@gmail.com", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
-
-if($mail)
-{
-echo 'OK';
-}
-
-}
-else
-{
-echo '<div class="notification_error">'.$error.'</div>';
-}
-
+  if ($filesize < 10000000) { // проверка на общий размер всех файлов. Многие почтовые сервисы не принимают вложения больше 10 МБ
+    mail($to, $subject, $message, $headers);
+    echo $_POST['nameFF'].', Ваше сообщение отправлено, спасибо!';
+  } else {
+    echo 'Извините, письмо не отправлено. Размер всех файлов превышает 10 МБ.';
+  }
 }
 ?>
