@@ -1,0 +1,68 @@
+body
+  +light
+  color: $text-color
+  background-color:  #f1f1f1
+img
+  max-width: 100%
+.section
+  &__title
+    display: flex
+    font-size: 48px
+    font-weight: bold
+    justify-content: center
+    padding: 20px
+.button-o
+  text-transform: uppercase
+  border: 2px solid $primary
+  padding: 17px 22px
+  font-size: 12px
+  color: $primary
+  font-weight: bold
+  background-color: #fff
+  text-decoration: none
+.button
+  padding: 25px 45px
+  text-transform: uppercase
+  border: none
+  background-color: $primary
+  color: #fff
+  font-weight: bold
+  text-decoration: none
+  &-fitting
+    color: $primary
+    background-color: #fff
+
+  &-add
+    background-color: lighten($primary, 10%)
+    color: #fff
+  &-like
+    background-color: $primary
+    height: 33px
+    width: 42px
+    border: none
+.bg-secondary
+  background: $bg-secondary
+.input
+  height: 80px
+  padding-left: 30px
+  border: 1px solid #dddddd
+input[type="checkbox"]
+  display: none
+  &:checked + label:before
+    background-color: $primary
+.checkbox
+  &-label
+    display: flex
+    align-items: center
+    margin-right: 40px
+    &:hover
+      cursor: pointer
+    &:before
+      content: ''
+      width: 30px
+      height: 30px
+      border: 1px solid #dddddd
+      margin-right: 20px
+@media (max-width: 576px)
+ .button-o
+     font-size: 10px

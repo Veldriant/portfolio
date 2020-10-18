@@ -1,0 +1,61 @@
+.main{
+  background-image:url("../img/Фон.jpg");
+    background-repeat:no-repeat;
+        background-position: center;
+            background-size: cover;
+                height: 100vh;
+                  width: 100%;
+                  max-width: 100%;
+                  overflow: hidden;
+          cursor: default;
+}
+.logo-text{
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+}
+/* logo-top*/
+#logo-left{
+    width: 30%;
+      font-size: 60px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+      font-weight:550;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px black;
+ }
+.link{
+      color:pink;
+      font-size: 60px;
+      background:  linear-gradient(45deg, #8edff3 53%,  #f57ae2 47%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+a{
+      text-decoration: none;
+     color: inherit;
+
+}
+a:visited {
+       color: inherit;
+}
+/* contact-top*/
+#logo-right{
+  float: right;
+}
+#logo-right{
+  float: right;
+  color:#ffffff;
+  font-size: 23px;
+  text-transform: uppercase;
+  padding-top: 23px;
+  font-weight: 500;
+    -webkit-text-stroke: 0.2px black;
+  /* letter-spacing:1.5px; */
+}
+#sms{
+  float: right;
+  padding-top: 20px;
+  margin-right:  20px;
+}

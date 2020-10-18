@@ -1,0 +1,101 @@
+#tabs{
+  padding-top: 900px;
+}
+.tab {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 40px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #006DFF 28.13%, rgba(3, 58, 131, 0.96) 100%);
+    cursor: pointer;
+    z-index:5;
+      color: white;
+}
+#tabs .whiteborder {
+
+    border-bottom: 3px solid #5cacf6;
+    border-radius: 50px;
+    color: #fff;
+}
+#tabs .tabContent {
+
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    margin-left: 40px;
+    position: relative;
+    top: -12px;
+    z-index:1;
+    border-radius:  50px;
+}
+#tabs .hide {
+    display: none;
+}
+#tabs .show {
+    display: block;
+}
+#tab1{
+
+color: #fff;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+text-align: center;
+}
+TABLE {
+
+margin-top: 40px;
+    color: white;
+   }
+   #th1{
+     border-left: 1px solid #fff;
+      height: 90px;
+   }
+   #th8{
+     border-right: 1px solid #fff;
+   }
+   TH{
+     width: 220px;
+     border-top: 1px solid #fff;
+     font-size: 20px;
+   }
+   TD {
+     height: 20px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      padding-left: 35px;
+        }
+    #tab2{
+    width: 1245px;
+    height: 211px;}
+    #td1{
+      border-left: 1px solid #fff;
+    }
+    #td8{
+      border-right: 1px solid #fff;
+    }
+.texDoc{
+  margin-top: 40px;
+  color: #fff;
+  width: 800px;
+  font-size: 15px;
+  margin-left: 40px;
+  border: none;
+}
+.OCT34-10-620-93{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+.ps{
+  padding-bottom: 50px;
+}

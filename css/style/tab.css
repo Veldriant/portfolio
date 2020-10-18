@@ -1,0 +1,139 @@
+/* #tabs{
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 500px;
+}
+.tab-setting{
+  margin-top: 460px;
+  padding-left: 100px;
+
+}
+#tabs li{
+  float: left;
+  margin: 0 .1em 1em 1em;
+}
+
+#tabs a{
+position: relative;
+margin-left: 30px;
+    background: linear-gradient(180deg, #006DFF 28.13%, rgba(3, 58, 131, 0.96) 100%);
+    padding: .7em 1.5em;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after{
+  box-shadow: 10px 10px 10px rgba(0, 26, 62, 0.4), inset 10px 10px 10px rgba(0, 138, 216, 0.59)
+}
+
+#tabs a:focus{
+  outline: 0;
+}
+
+#tabs a::after{
+  content:'';
+  position:absolute;
+  bottom: 0;
+  width: 1em;
+  -webkit-transform: skew(10deg);
+  -moz-transform: skew(10deg);
+  -ms-transform: skew(10deg);
+  -o-transform: skew(10deg);
+  transform: skew(10deg);
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+}
+
+#tabs #current a,
+#tabs #current a::after{
+  /* background: #fff; */
+  z-index: 3;
+}
+
+#content
+{
+    /* background: #fff; */
+    padding: 2em;
+	position: relative;
+	z-index: 2;
+    -moz-border-radius: 0 5px 5px 5px;
+    -webkit-border-radius: 0 5px 5px 5px;
+    border-radius: 0 5px 5px 5px;
+    -moz-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+}
+
+#content h2, #content h3, #content p
+{
+    margin: 0 0 15px 0;
+}
+
+#about
+{
+    color: #999;
+}
+
+#about a
+{
+    color: #eee;
+}
+#tab1{
+  position: absolute;
+color: #fff;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+text-align: center;
+}
+TABLE {
+
+margin-top: 40px;
+    color: white;
+   }
+   #th1{
+     border-left: 1px solid #fff;
+      height: 90px;
+   }
+   #th8{
+     border-right: 1px solid #fff;
+   }
+   TH{
+     width: 220px;
+     border-top: 1px solid #fff;
+     font-size: 20px;
+   }
+   TD {
+     height: 50px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      padding-left: 35px;
+        }
+    #tab2{
+    width: 1245px;
+    height: 211px;}
+    #td1{
+      border-left: 1px solid #fff;
+    }
+    #td8{
+      border-right: 1px solid #fff;
+    } */
